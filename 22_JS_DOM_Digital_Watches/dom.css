@@ -14,3 +14,8 @@ button{
     font-size: 20px;
     padding: 14px 25px;
 } */
+
+.card , .card-body {
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+}
