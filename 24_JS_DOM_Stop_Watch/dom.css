@@ -1,4 +1,4 @@
-div{
+/* div{
     background-color: gray;
     color: white;
     text-align: center;
@@ -13,4 +13,12 @@ h1{
 button{
     font-size: 20px;
     padding: 14px 25px;
+} */
+
+body{
+    background-color: darkslategrey !important;
+}
+
+button {
+    border-radius: 45px !important;
 }
