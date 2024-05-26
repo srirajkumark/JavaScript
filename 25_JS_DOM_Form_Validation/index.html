@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+    <!-- <link rel="stylesheet" href="../CSS/style.css"> -->
+    <link rel="stylesheet" href="dom.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+    <link rel="stylesheet" href="../BootStrap/css/mdb.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">JS Form Validation</a>
+    </nav>
+
+    <!-- Form Validation -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 m-auto">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3>Register Here</h3>
+                    </div>
+                    <div class="card-body bg-light-green">
+                        <form id="register-form">
+                            <div class="form-group m-3">
+                                <input id="username" type="text" class="form-control is-form-valid" placeholder="Username">
+                            </div>
+                            <div class="form-group m-3">
+                                <input id="email" type="email" class="form-control is-form-invalid" placeholder="Email">
+                            </div>
+                            <div class="form-group m-3">
+                                <input id="password" type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group m-3">
+                                <input id="c_password" type="password" class="form-control" placeholder="Conform Password">
+                            </div>
+                            <div class="text-center m-3">
+                                <input type="submit" value="Register" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Files -->
+    <script src="../BootStrap/js/mdb.es.min.js"></script>
+    <script type="text/javascript" src="../BootStrap/js/mdb.umd.min.js"></script>
+
+    <!-- Local JS FIle -->
+    <script src="app.js"></script>
+</body>
+</html>
