@@ -39,7 +39,7 @@ console.log(localStorage.getItem('name'));
 localStorage.removeItem('name');
 
 // clear
-// localStorage.clear();
+localStorage.clear();
 
 // local storage with an array
 let colors = ['white', 'black', 'silver', 'purple', 'yellow'];
