@@ -44,10 +44,17 @@ taskListEl.addEventListener('click', function(event){
     let targetElemet = event.target;
     if(targetElemet.classList.contains('fa-window-close')){
         let actualEl = targetElemet.parentElement.parentElement;
-        let selectTask = actualEl.innerText;
-        console.log(selectTask);
-    }
-    else{
-        console.log('no');
+        let selectedTask = actualEl.innerText;
+        
+        // get tasks from local storage
+        let taskList = localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : [];
+        taskList = taskList.filter(function(task){
+            return task.trim() !== selectedTask.trim();
+        });
+        localStorage.setItem('tasks', JSON.stringify(taskList));
+        displayTasks();
+
+        window.reload();
+
     }
 });
