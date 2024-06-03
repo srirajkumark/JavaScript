@@ -36,3 +36,18 @@ let displayTasks = () => {
 };
 
 displayTasks();
+
+
+// remove Tasks
+let taskListEl = document.querySelector('#task-list');
+taskListEl.addEventListener('click', function(event){
+    let targetElemet = event.target;
+    if(targetElemet.classList.contains('fa-window-close')){
+        let actualEl = targetElemet.parentElement.parentElement;
+        let selectTask = actualEl.innerText;
+        console.log(selectTask);
+    }
+    else{
+        console.log('no');
+    }
+});
