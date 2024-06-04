@@ -54,3 +54,12 @@ let a = 10;
         }
     }
 }
+
+// Block Scope
+
+let course = 'Engneering';
+if(course === 'Engineering'){
+    let dept = 'Software';
+}
+
+console.log(course);
