@@ -63,3 +63,13 @@ if(course === 'Engineering'){
 }
 
 console.log(course);
+
+// function
+let greet = function(){
+    let msg = 'Good Morning';
+    return msg;
+    // console.log(msg);
+};
+let result = greet();
+console.log(result);
+
