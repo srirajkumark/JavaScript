@@ -46,4 +46,32 @@ let template2 = `<ul>
                 </ul>`;
 
 
+// 2) Optional Parameters:
 
+// Old ES5 Model:
+// let greet = function(name, age){
+//     if(age === undefined){
+//         age = 30;
+//     }
+//     let msg = `Hello ${name}. You are ${age} years old`;
+//     console.log(msg);
+// };
+// greet('John', 40);
+
+
+// New ES6 Model:
+let greet = function(name, age=30){
+    let msg = `Hello ${name}. You are ${age} years old`;
+    console.log(msg);
+};
+greet('John', 40);
+
+
+let printNumbers = function(startNumber, endNumber=10){
+    let result = '';
+    for(let i = startNumber; i<=endNumber; i++){
+        result += `${i} `;
+    }
+    console.log(result);
+};
+printNumbers(1, 20);
