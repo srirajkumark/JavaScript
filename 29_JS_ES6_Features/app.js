@@ -75,3 +75,27 @@ let printNumbers = function(startNumber, endNumber=10){
     console.log(result);
 };
 printNumbers(1, 20);
+
+
+
+// 3) Arrow Functions:
+/*
+    Function Types:
+    1) Normal Function
+    2) Function Expression
+    3) Arrow Function
+*/
+
+// 1) Normal Function
+let result = '';
+function printNumberNF() {
+    let msg = '';
+    for(let i=0; i<=10; i++){
+        msg += `${i} `;
+    }
+    return msg;
+};
+result = printNumberNF();
+console.log(result);
+
+// 2) Function Expression
