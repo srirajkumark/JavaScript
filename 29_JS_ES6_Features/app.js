@@ -199,3 +199,82 @@ let student1 = {
 };
 console.log(student1.fullName());
 
+
+// 4) for-of Loop:
+
+employees = [
+    {
+        id : 1,
+        name : 'John',
+        age : 40,
+        designation : 'Manager',
+        isActive : true
+    },
+    {
+        id : 2,
+        name : 'Wilson',
+        age : 4,
+        designation : 'Sr.Manager',
+        isActive : false
+    },
+    {
+        id : 3,
+        name : 'Rajan',
+        age : 25,
+        designation : 'Software Engineer',
+        isActive : true
+    },
+    {
+        id : 4,
+        name : 'Laura',
+        age : 28,
+        designation : 'Tech Lead',
+        isActive : false
+    },
+    {
+        id : 5,
+        name : 'David',
+        age : 26,
+        designation : 'Software Engineer',
+        isActive : true
+    }
+
+];
+
+// Normal - for loop
+let result1 = '';
+for(let i=0; i<=employees.length-1; i++){
+    let employee = employees[i];
+    result1 += `${employee.name.toUpperCase()} `;
+};
+console.log(result1); 
+
+// for-in loop upto ES5
+let result2 = '';
+for(let index in employees){
+    let employee = employees[index];
+    result2 += `${employee.name.toUpperCase()} * `;
+};
+console.log(result2);
+
+// for-of loop from ES6
+let result3 = '';
+for(let emp of employees){
+    result3 += `${emp.name.toUpperCase()} + `;
+};
+console.log(result3);
+
+// forEach Function ES5
+let result4 = '';
+employees.forEach(function(employee){
+    result4 += `${employee.name.toUpperCase()} & `;
+});
+console.log(result4);
+
+// forEach with Arrow Function ES6
+let result5 = '';
+employees.forEach(employee => {
+    result5 += `${employee.name.toUpperCase()} $ `;
+});
+console.log(result5);
+
