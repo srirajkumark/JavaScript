@@ -99,3 +99,103 @@ result = printNumberNF();
 console.log(result);
 
 // 2) Function Expression
+let printNumberFE = function(){
+    let msg = '';
+    for(let i=0; i<=10; i++){
+        msg += `${i} `;
+    }
+    return msg;
+};
+
+resultFE = printNumberFE();
+console.log(resultFE);
+
+
+// 3) Arrow Function
+let printNumberAF = () => {
+    let msg = '';
+    for(let i=0; i<=10; i++){
+        msg += `${i} `;
+    }
+    return msg;
+};
+resultAF = printNumberFE();
+console.log(resultAF);
+
+// Usage of Arrow Function
+let employees = [
+    {
+        id : 1,
+        name : 'John',
+        age : 40,
+        designation : 'Manager',
+        isActive : true
+    },
+    {
+        id : 2,
+        name : 'Wilson',
+        age : 4,
+        designation : 'Sr.Manager',
+        isActive : false
+    },
+    {
+        id : 3,
+        name : 'Rajan',
+        age : 25,
+        designation : 'Software Engineer',
+        isActive : true
+    },
+    {
+        id : 4,
+        name : 'Laura',
+        age : 28,
+        designation : 'Tech Lead',
+        isActive : false
+    },
+    {
+        id : 5,
+        name : 'David',
+        age : 26,
+        designation : 'Software Engineer',
+        isActive : true
+    }
+
+];
+
+// Junior Employees
+let juniorEmployees = employees.filter(function(employee){
+    return employee.age <= 30;
+});
+console.log(juniorEmployees);
+
+// Junior Employees with Arrow Function
+let jrEmployees = employees.filter((employee) => {
+    return employee.age <= 30;
+});
+console.log(jrEmployees);
+
+// Above arrow function in more simplifed way
+let jrEmp = employees.filter(employee => employee.age <= 30);
+console.log(jrEmp);
+
+// Limitations of Arrow Function
+let student = {
+    firstName : 'Arjun',
+    lastName : 'Reddy',
+    fullName : function() {
+        return `${this.firstName} ${this.lastName}`
+    }
+};
+console.log(student.fullName());
+// For the above example, this keyword will not look for current object in Arrow Function, so we should not use it in these scenarios.
+// But we can use it in below example by using object name.
+
+let student1 = {
+    firstName : 'Arjun',
+    lastName : 'Reddy',
+    fullName : () => {
+        return `${student1.firstName} ${student1.lastName}`
+    }
+};
+console.log(student1.fullName());
+
