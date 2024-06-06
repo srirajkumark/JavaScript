@@ -6,7 +6,7 @@ ES6 / ES-2015 Features
 2) Optional Parameters
 3) Arrow Functions
 4) for-of Loops
-5 Destructuring
+5) Destructuring
 6) Spread Operator
 */
 
@@ -277,4 +277,34 @@ employees.forEach(employee => {
     result5 += `${employee.name.toUpperCase()} $ `;
 });
 console.log(result5);
+
+
+// 5) Destructuring: ES6 
+let person = {
+    name : 'Arjun Reddy',
+    age : 24,
+    course : 'MS',
+    address : {
+        street : '100 Feet Road',
+        city : 'Hyderabad',
+        state : 'TS'
+    },
+    hobbies : {
+        regular : {
+            id : 1,
+            regHobbies : ['Reading Books', 'Playing Cricket']
+        },
+        occasional : {
+            id : 1,
+            occHobbies : ['Swimming', 'Online Games']
+        }
+    }
+};
+
+// Destructuring
+let {street, city, state} = person.address;
+console.log(`STREET : ${street} CITY : ${city} STATE : ${state}`);
+
+let {regHobbies} = person.hobbies.regular;
+console.log(regHobbies);
 
