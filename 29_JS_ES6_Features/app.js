@@ -310,4 +310,27 @@ console.log(regHobbies);
 
 // 6) Spread Operator:
 // (...) to spread array elements as functional parameters.
-let numbers = [10, 58, 98];
+let numbers = [10, 58, 98, 754, 1, 854, 91, 161, 6487];
+let min = Math.min(...numbers);
+let max = Math.max(...numbers);
+console.log(min);
+console.log(max);
+
+// Old Process of merging two arrays:-
+let array1 = ['white', 'black', 'blue', 'purple'];
+let array2 = ['yellow', 'silver', 'orange'];
+let colors = [];
+for(let color of array1){
+    colors.push(color);
+};
+for(let color of array2){
+    colors.push(color);
+};
+console.log(colors);
+
+// New Process of merging two arrays:-
+array1 = ['white', 'black', 'blue', 'purple'];
+array2 = ['yellow', 'silver', 'orange'];
+let colorz = [...array1, ...array2];
+console.log(colorz);
+
