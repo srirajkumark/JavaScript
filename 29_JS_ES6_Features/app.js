@@ -301,10 +301,13 @@ let person = {
     }
 };
 
-// Destructuring
+// Destructuring Examples
 let {street, city, state} = person.address;
 console.log(`STREET : ${street} CITY : ${city} STATE : ${state}`);
 
 let {regHobbies} = person.hobbies.regular;
 console.log(regHobbies);
 
+// 6) Spread Operator:
+// (...) to spread array elements as functional parameters.
+let numbers = [10, 58, 98];
