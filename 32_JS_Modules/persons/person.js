@@ -15,3 +15,4 @@ export class Person {
         console.log(msg);
     }
 };
+
