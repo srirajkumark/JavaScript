@@ -52,20 +52,21 @@ console.log(output);
 
 // Realtime use of callback function:
 
-let employee = [{id : 1, name : 'John', age : 35},
+let employees = [{id : 1, name : 'John', age : 35},
                 {id : 2, name : 'Rajan', age : 25}
 ];
 
-let createEmployee = (employee) => {
+let createEmployee = (employee, callback) => {
     setTimeout(() => {
         employees.push(employee);
+        callback();
     }, 2000);
 };
 
 let getEmployees = () => {
     setTimeout(() => {
         let employeeRows = '';
-        employees.foreach((employee) => {
+        employees.forEach((employee) => {
             employeeRows += `<tr>
                                 <td>${employee.id}</td>
                                 <td>${employee.name}</td>
@@ -76,5 +77,5 @@ let getEmployees = () => {
     }, 1000);
 };
 
-createEmployee({id : 3, name : 'Wilson', age : 45});
+createEmployee({id : 3, name : 'Wilson', age : 45}, getEmployees);
 getEmployees();
