@@ -1,4 +1,4 @@
-// promse concept wth callbacks
+// promise concept with callbacks
 
 let doTask = (success, failure) => {
     // dong the task
@@ -22,7 +22,7 @@ let cleanCamera = new Promise((resolve, reject) => {
     // cleaning camera
     let isDone = true;
     if(isDone){
-        resolve('Claeaning is Done');
+        resolve('Cleaning is Done');
     }
     else{
         reject('Cleaning is Not Done');
