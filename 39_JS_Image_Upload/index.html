@@ -17,7 +17,48 @@
         <a href="#" class="navbar-brand">JS Image Upload</a>
     </nav>
 
-    <!--  -->
+    <!-- Image Upload -->
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h3>Image Upload</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="upload-form" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="formFileMultiple" class="form-label">Upload Here:</label>
+                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                            </div>
+                            <div>
+                                <input type="submit" value="Upload" class="btn btn-primary btn-sm mt-3">
+                                <button class="btn btn-danger btn-sm mt-3 ms-2" id="remove-btn">Remove All</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Images Data -->
+     <div class="container mt-5 mb-3">
+        <div class="row" id="card-row">
+            <!-- <div class="col-md-5">
+                <div class="card img-card">
+                    <img src="image-card.jpg" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Image Card</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, modi nesciunt quam praesentium maxime odio</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+     </div>
+
+
 
     <!-- Bootstrap JS Files -->
     <script src="../BootStrap/js/mdb.es.min.js"></script>
