@@ -18,7 +18,6 @@ uploadForm.addEventListener('submit', function(){
 });
 
 
-
 // display Image
 let displayImage = () => {
     let imagesList = localStorage.getItem('images') ? JSON.parse(localStorage.getItem('images')) : [];
@@ -47,3 +46,4 @@ removeBtn.addEventListener('click', function(){
     localStorage.removeItem('images');
     displayImage();
 });
+
