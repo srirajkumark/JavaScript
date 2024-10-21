@@ -6,7 +6,7 @@ Easy to understand and covered all the major topics with examples.
 
 ## List of Concepts
 
-In the project, you can find the below concepts:
+In this project, you can find the below concepts:
 
 ### 1. Basics
 
@@ -34,6 +34,16 @@ In the project, you can find the below concepts:
 
 ### 13. Number Sring JSON Object
 
-### 14. Coding Examples
+### 14. JS Coding Examples
 
-### 15. Any more.....
+### 15. DOM Introduction
+
+### 16. DOM Manipulation
+
+### 17. DOM Keyup Event
+
+### 18. DOM Change Event Select Box
+
+### 19. DOM Change Password
+
+### 20. DOM Range Select
