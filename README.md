@@ -47,3 +47,15 @@ In this project, you can find the below concepts:
 ### 19. DOM Change Password
 
 ### 20. DOM Range Select
+
+### 21. DOM SMS App
+
+### 22. DOM Digital Watches
+
+### 23. DOM Math Table
+
+### 24. DOM Stop Watch
+
+### 25. DOM Form Validation
+
+### 26. Local & Session Storage
