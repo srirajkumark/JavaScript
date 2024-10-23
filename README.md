@@ -59,3 +59,16 @@ In this project, you can find the below concepts:
 ### 25. DOM Form Validation
 
 ### 26. Local & Session Storage
+
+### 27. DOM Task List App
+
+### 28. Scopes
+
+### 29. ES6 Features
+
+### 30. Classes
+
+### 31. Sub Classes
+
+### 32. Modules
+
