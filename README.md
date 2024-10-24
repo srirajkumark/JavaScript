@@ -72,3 +72,11 @@ In this project, you can find the below concepts:
 
 ### 32. Modules
 
+### 33. SetInterval and SetTimeout
+
+### 34. Asynchronous JavaScript
+
+### 35. Callbacks
+
+### 36. Promises
+
